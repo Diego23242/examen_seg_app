@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">
+    <title>Examen de Seguridad</title>
+</head>
+<body>
+    <h1>Examen de Seguridad</h1>
+    <form id="securityExam" action="#" method="post" onsubmit="evaluarRespuestas(event)">
+        
+        <h3>Pregunta 1:</h3>
+        <p>¿A los usuarios que no pueden demostrar autorización, se les debe denegar la entrada al sistema?</p>
+        <label>
+            <input type="radio" name="q1" value="correcto"> Control de acceso
+        </label>
+        <label>
+            <input type="radio" name="q1" value="incorrecto"> Gestión de autentificación
+        </label>
+        <label>
+            <input type="radio" name="q1" value="incorrecto"> Administración de sesiones
+        </label>
+        <label>
+            <input type="radio" name="q1" value="incorrecto"> Validación de entradas
+        </label>
+        <label>
+            <input type="radio" name="q1" value="incorrecto"> Protección de datos
+        </label>
+        
+        <h3>Pregunta 2:</h3>
+        <p>El mínimo privilegio, protección del caché o almacenar información sensible sin encriptar corresponde a:</p>
+        <label>
+            <input type="radio" name="q2" value="incorrecto"> Control de acceso
+        </label>
+        <label>
+            <input type="radio" name="q2" value="incorrecto"> Gestión de autentificación
+        </label>
+        <label>
+            <input type="radio" name="q2" value="incorrecto"> Administración de sesiones
+        </label>
+        <label>
+            <input type="radio" name="q2" value="incorrecto"> Validación de entradas
+        </label>
+        <label>
+            <input type="radio" name="q2" value="correcto"> Protección de datos
+        </label>
+        
+        <h3>Pregunta 3:</h3>
+        <p>Las duraciones de estas deben ser lo más breve posible. Se aconseja la utilización de tokens para reforzarlas.</p>
+        <label>
+            <input type="radio" name="q3" value="incorrecto"> Utilización de tokens
+        </label>
+        <label>
+            <input type="radio" name="q3" value="incorrecto"> Control de acceso
+        </label>
+        <label>
+            <input type="radio" name="q3" value="correcto"> Administración de sesiones
+        </label>
+        <label>
+            <input type="radio" name="q3" value="incorrecto"> Validación de entradas
+        </label>
+        <label>
+            <input type="radio" name="q3" value="incorrecto"> Protección de datos
+        </label>
+        
+        <h3>Pregunta 4:</h3>
+        <p>Es la necesidad de identificar todas las fuentes de datos, y de clasificarlas según si son de confianza o no son de confianza.</p>
+        <label>
+            <input type="radio" name="q4" value="incorrecto"> Control de acceso
+        </label>
+        <label>
+            <input type="radio" name="q4" value="incorrecto"> Gestión de autentificación
+        </label>
+        <label>
+            <input type="radio" name="q4" value="incorrecto"> Administración de sesiones
+        </label>
+        <label>
+            <input type="radio" name="q4" value="correcto"> Validación de entradas
+        </label>
+        <label>
+            <input type="radio" name="q4" value="incorrecto"> Protección de datos
+        </label>
+        
+        <h3>Pregunta 5:</h3>
+        <p>Almacenarlas en la aplicación solo los hashes criptográficos de estas.</p>
+        <label>
+            <input type="radio" name="q5" value="correcto"> Gestión de autentificación
+        </label>
+        <label>
+            <input type="radio" name="q5" value="incorrecto"> Control de acceso
+        </label>
+        <label>
+            <input type="radio" name="q5" value="incorrecto"> Administración de sesiones
+        </label>
+        <label>
+            <input type="radio" name="q5" value="incorrecto"> Validación de entradas
+        </label>
+        <label>
+            <input type="radio" name="q5" value="incorrecto"> Protección de datos
+        </label>
+        
+        <h3>Pregunta 6:</h3>
+        <p>Este protocolo se está convirtiendo en un estándar para los navegadores modernos, el cual sirve para varios propósitos ¿Cuáles son estos tres propósitos?</p>
+        <input type="text" name="q6" placeholder="Tu respuesta">
+        
+        <h3>Pregunta 7:</h3>
+        <p>Es un protocolo criptográfico que asegura la conexión entre un servidor web y una aplicación web mediante el cifrado de datos</p>
+        <input type="text" name="q7" placeholder="Tu respuesta">
+        
+        <h3>Pregunta 8:</h3>
+        <p>Son las capas con las que funciona el protocolo criptográfico para asegurar la conexión entre el servidor web y la aplicación web</p>
+        <input type="text" name="q8" placeholder="Tu respuesta">
+        
+        <h3>Pregunta 9:</h3>
+        <p>Son algunas ventajas que ofrece este protocolo en empresas y aplicaciones web.</p>
+        <input type="text" name="q9" placeholder="Tu respuesta">
+        
+        <h3>Pregunta 10:</h3>
+        <p>La capa de sockets seguro es una versión previa de la seguridad de capa de transporte. ¿Es esto verdadero o falso?</p>
+        <label>
+            <input type="radio" name="q10" value="correcto"> Verdadero
+        </label>
+        <label>
+            <input type="radio" name="q10" value="incorrecto"> Falso
+        </label>
+        
+        <h3>Pregunta 11:</h3>
+        <p>La mayoría de los navegadores modernos marcan como seguros los sitios HTTP. ¿Es esto verdadero o falso?</p>
+        <label>
+            <input type="radio" name="q11" value="correcto"> Falso
+        </label>
+        <label>
+            <input type="radio" name="q11" value="incorrecto"> Verdadero
+        </label>
+        
+        <h3>Pregunta 12:</h3>
+        <p>Cuando las claves no se protegen convenientemente, un atacante puede aprovechar vulnerabilidades</p>
+        <label>
+            <input type="radio" name="q12" value="correcto"> Perdida de autentificación y gestión de sesiones
+        </label>
+        <label>
+            <input type="radio" name="q12" value="incorrecto"> Inyección
+        </label>
+        
+        <h3>Pregunta 13:</h3>
+        <p>Los parámetros de entrada mal gestionados dentro de la programación pueden provocar vulnerabilidad</p>
+        <label>
+            <input type="radio" name="q13" value="correcto"> Inyección
+        </label>
+        <label>
+            <input type="radio" name="q13" value="incorrecto"> Control de acceso inseguro
+        </label>
+        
+        <h3>Pregunta 14:</h3>
+        <p>Los atacantes utilizan herramientas SAST y DAST para detectar vulnerabilidades</p>
+        <label>
+            <input type="radio" name="q14" value="correcto"> Control de acceso inseguro
+        </label>
+        <label>
+            <input type="radio" name="q14" value="incorrecto"> Cross Site Scripting
+        </label>
+        
+        <h3>Pregunta 15:</h3>
+        <p>Es un vector de ataque que los hackers utilizan para robar información</p>
+        <label>
+            <input type="radio" name="q15" value="correcto"> Cross Site Scripting
+        </label>
+        <label>
+            <input type="radio" name="q15" value="incorrecto"> Inyección
+        </label>
+        
+        <input type="submit" value="Enviar respuestas">
+    </form>
+
+    <script>
+        function evaluarRespuestas(event) {
+            event.preventDefault();
+    
+            // Obtener respuestas del formulario
+            const respuestas = {
+                q1: document.querySelector('input[name="q1"]:checked').value,
+                q2: document.querySelector('input[name="q2"]:checked').value,
+                q3: document.querySelector('input[name="q3"]:checked').value,
+                q4: document.querySelector('input[name="q4"]:checked').value,
+                q5: document.querySelector('input[name="q5"]:checked').value,
+                q6: document.querySelector('input[name="q6"]').value.toLowerCase(),
+                q7: document.querySelector('input[name="q7"]').value.toLowerCase(),
+                q8: document.querySelector('input[name="q8"]').value.toLowerCase(),
+                q9: document.querySelector('input[name="q9"]').value.toLowerCase(),
+                q10: document.querySelector('input[name="q10"]:checked').value,
+                q11: document.querySelector('input[name="q11"]:checked').value,
+                q12: document.querySelector('input[name="q12"]:checked').value,
+                q13: document.querySelector('input[name="q13"]:checked').value,
+                q14: document.querySelector('input[name="q14"]:checked').value,
+                q15: document.querySelector('input[name="q15"]:checked').value,
+            };
+    
+            // Comparar respuestas con las correctas
+            const respuestasCorrectas = {
+                q1: 'correcto',
+                q2: 'correcto',
+                q3: 'correcto',
+                q4: 'correcto',
+                q5: 'correcto',
+                q6: 'encriptacion autentificacion integridad',
+                q7: 'transport layer security',
+                q8: 'protocolo de registro y de negociacion',
+                q9: 'previene intercepciones proporciona integridad de los datos ofrece un control granular',
+                q10: 'correcto',
+                q11: 'correcto',
+                q12: 'correcto',
+                q13: 'correcto',
+                q14: 'correcto',
+                q15: 'correcto',
+            };
+    
+            // Evaluar respuestas
+            let respuestasCorrectasCount = 0;
+            let respuestasIncorrectas = [];
+    
+            for (const pregunta in respuestasCorrectas) {
+                if (Array.isArray(respuestasCorrectas[pregunta])) {
+                    // Comparar respuestas de opción múltiple
+                    const respuestasSeleccionadas = respuestas[pregunta].split(',').map(item => item.trim().toLowerCase());
+                    const respuestasCorrectasArray = respuestasCorrectas[pregunta].map(item => item.toLowerCase());
+    
+                    if (arraysEqual(respuestasSeleccionadas, respuestasCorrectasArray)) {
+                        respuestasCorrectasCount++;
+                    } else {
+                        respuestasIncorrectas.push(pregunta);
+                    }
+                } else {
+                    // Comparar otras respuestas
+                    if (respuestasCorrectas[pregunta] === respuestas[pregunta]) {
+                        respuestasCorrectasCount++;
+                    } else {
+                        respuestasIncorrectas.push(pregunta);
+                    }
+                }
+            }
+    
+            // Mostrar resultados
+            alert(`Has obtenido ${respuestasCorrectasCount} respuestas correctas de 15.`);
+            if (respuestasIncorrectas.length > 0) {
+                alert(`Preguntas incorrectas: ${respuestasIncorrectas.join(', ')}`);
+            }
+        }
+    
+        // Función para comparar dos arrays
+        function arraysEqual(arr1, arr2) {
+            return arr1.length === arr2.length && arr1.every((value, index) => value === arr2[index]);
+        }
+    </script>    
+</body>
+</html>
